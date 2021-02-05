@@ -4,7 +4,18 @@
 display:table;
 clear:both;}
 a{text-decoration: none;color: black;}
+header a:visited{color:blue}
 body{font-family: 'raleway';}
+header{width: 1340px;height: 250px;margin:auto;position:relative}
+header p.logo img{height: 50px;position:absolute;top:50px;left:30px;}
+header div.catelogue{position:absolute;top:55px;right: 50px;}
+header div.catelogue ul li{float:left;margin-left: 80px;font-size: 14px;}
+/* header h1{float:left;margin-top: 160px;margin-left: -100px;
+font-weight: 1800;} */
+header h1{position:absolute;left:30px;top:120px;
+    font-weight: 800;font-size: 18px;}
+header h2{position:absolute;left:30px;top:150px;
+    font-weight: 200;font-size: 14px;}
 section.hebergement{width: 1340px;margin:auto;display: flex;justify-content: space-between;}
 
 .left h1{position:absolute;top:45px;left:40px;font-size: 18px;border-radius: 20px;margin:auto;}
