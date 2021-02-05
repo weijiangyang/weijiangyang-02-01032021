@@ -1,0 +1,81 @@
+@font-face{font-family: 'raleway';
+    src: url(./font/Raleway-VariableFont_wght.ttf);}
+.clearfix{content:'';
+display:table;
+clear:both;}
+a{text-decoration: none;color: black;}
+body{font-family: 'raleway';}
+section.hebergement{width: 1340px;margin:auto;display: flex;justify-content: space-between;}
+
+.left h1{position:absolute;top:45px;left:40px;font-size: 18px;border-radius: 20px;margin:auto;}
+.hebergement h2.afficher{position:absolute;bottom:30px;left:40px;font-size: 13px;font-family:'raleway'}
+div.left{width:880px;height: 625px;background-color:#F2F2F2;margin:auto;border-radius: 20px;position:relative;}
+/* carre de herbergement*/
+/* section-left */
+div.auberge-cannebiere,
+div.hotel-port,
+div.hotel-mouette,
+div.hotel-mer,
+div.auberge-panier,
+div.hotel-amina
+{width: 235px;height: 185px;
+    border:5px white solid;
+    border-radius: 10px;
+    background-color: white;
+    /* margin-right: 35px; */
+    margin-bottom: 30px;
+}
+div.auberge-cannebiere img,
+div.hotel-port img,
+div.hotel-mouette img,
+div.hotel-mer img,
+div.auberge-panier img,
+div.hotel-amina img
+{width: 235px;border-radius: 8px;
+    margin-bottom: 8px;}
+div.auberge-cannebiere h2,
+div.hotel-port h2,
+div.hotel-mouette h2,
+div.hotel-mer h2,
+div.auberge-panier h2,
+div.hotel-amina h2
+{margin-left:8px;
+    margin-bottom: 8px;font-size: 16px;font-family: 'raleway';}
+
+div.auberge-cannebiere p,
+div.hotel-port p,
+div.hotel-mouette p,
+div.hotel-mer p,
+div.auberge-panier p,
+div.hotel-amina p
+{margin-left:8px;margin-bottom:8px;font-size: 14px;}
+div.menu-left{width:880px;display:flex;flex-wrap: wrap;flex-direction: row;
+    
+
+justify-content:space-evenly;margin-top: 90px;}
+/* section-right */
+div.right{width:420px;height: 625px;background-color:#F2F2F2;margin:auto;border-radius: 20px;position:relative;}
+.hotel-soleil,
+.au-coeur-eau,
+.hotel-blanc-bleu
+{width:350px;margin:auto;border:5px white solid;border-radius:12px;
+    background-color: white;position: relative;margin-bottom:33px;}
+.hotel-soleil{margin-top: 90px;}
+.hotel-soleil img,
+.au-coeur-eau img,
+.hotel-blanc-bleu img
+{width: 120px;height: 133px;display: inline-block;border-radius: 10px 0 0 10px;}
+.hotel-soleil div.desc,
+.au-coeur-eau div.desc,
+.hotel-blanc-bleu div.desc
+{float:right;position:absolute;top:15px;left:140px}
+.hotel-soleil div.desc h1,
+.au-coeur-eau div.desc h1,
+.hotel-blanc-bleu div.desc h1
+{margin-bottom: 10px;font-size: 16px;}
+.hotel-soleil p,
+.au-coeur-eau p,
+.hotel-blanc-bleu p
+{font-size: 14px;margin-bottom: 45px;}
+div.right>h1{float:left;position:absolute;top:45px;left:30px;}
+div.right> p.sign{float:right;position:absolute;top:45px;right:30px} 
