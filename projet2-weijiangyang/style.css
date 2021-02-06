@@ -13,12 +13,12 @@ header div.catelogue ul li{float:left;margin-left: 80px;font-size: 14px;}
 /* header h1{float:left;margin-top: 160px;margin-left: -100px;
 font-weight: 1800;} */
 header h1{position:absolute;left:30px;top:120px;
-    font-weight: 800;font-size: 18px;}
+    font-weight: 800;font-size:18px;}
 header h2{position:absolute;left:30px;top:150px;
     font-weight: 200;font-size: 14px;}
 section.hebergement{width: 1340px;margin:auto;display: flex;justify-content: space-between;}
 
-.left h1{position:absolute;top:45px;left:40px;font-size: 18px;border-radius: 20px;margin:auto;}
+.left h1{position:absolute;top:45px;left:40px;font-size:18px;border-radius: 20px;margin:auto;}
 .hebergement h2.afficher{position:absolute;bottom:30px;left:40px;font-size: 13px;font-family:'raleway'}
 div.left{width:880px;height: 625px;background-color:#F2F2F2;margin:auto;border-radius: 20px;position:relative;}
 /* carre de herbergement*/
