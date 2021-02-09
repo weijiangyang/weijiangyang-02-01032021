@@ -20,7 +20,7 @@ section.hebergement{width: 1340px;margin:auto;display: flex;justify-content: spa
 
 .left h1{position:absolute;top:45px;left:40px;font-size:18px;border-radius: 20px;margin:auto;}
 .hebergement h2.afficher{position:absolute;bottom:30px;left:40px;font-size: 13px;font-family:'raleway'}
-div.left{width:880px;height: 625px;background-color:#F2F2F2;margin:auto;border-radius: 20px;position:relative;}
+div.left{width:880px;height: 625px;background-color:#F2F2F2;border-radius: 20px;position:relative;}
 /* carre de herbergement*/
 /* section-left */
 div.auberge-cannebiere,
@@ -65,7 +65,7 @@ div.menu-left{width:880px;display:flex;flex-wrap: wrap;flex-direction: row;
 
 justify-content:space-evenly;margin-top: 90px;}
 /* section-right */
-div.right{width:420px;height: 625px;background-color:#F2F2F2;margin:auto;border-radius: 20px;position:relative;}
+div.right{width:420px;height: 625px;background-color:#F2F2F2;border-radius: 20px;position:relative;}
 .hotel-soleil,
 .au-coeur-eau,
 .hotel-blanc-bleu
@@ -90,3 +90,77 @@ div.right{width:420px;height: 625px;background-color:#F2F2F2;margin:auto;border-
 {font-size: 14px;margin-bottom: 45px;}
 div.right>h1{float:left;position:absolute;top:45px;left:30px;}
 div.right> p.sign{float:right;position:absolute;top:45px;right:30px} 
+/* viewport */
+fieldset.viewport{width: 302px;border-radius;:20px}
+fieldset.viewport img{width: 100%;border-radius: 20px 20px 0 0;}
+fieldset.viewport figcaption{width: 100%;height: 56px;
+    background-color: burlywood;
+text-align: center;
+line-height: 56px;
+font-weight: bold;
+border-radius: 0 0 20px 20px;
+text-align: left;
+text-indent: 20px;}
+/* forte-et-ile */
+    div.forte-et-ile{width: 302px;}
+fieldset.forte{width: 100%;}
+fieldset.forte img{width:100%;
+    border-radius: 20px 20px 0 0;}
+fieldset.forte figcaption{width: 100%;height: 56px;
+    background-color: burlywood;
+
+line-height: 56px;
+font-weight: bold;
+border-radius: 0 0 20px 20px;
+text-align:left;
+text-indent: 20px;}
+fieldset.ile{width:100%;
+margin-top:43px;}
+fieldset.ile img{width: 100%;border-radius: 20px 20px 0 0 ;}
+fieldset.ile figcaption{width: 100%;height: 56px;
+    background-color: burlywood;
+text-align: center;
+line-height: 56px;
+font-weight: bold;
+border-radius: 0 0 20px 20px;
+text-align: left;
+text-indent: 20px;}
+fieldset.parc{width: 302px;}
+fieldset.parc img{width: 100%;
+border-radius: 20px 20px 0 0;}
+fieldset.parc figcaption{width: 100%;height: 56px;
+    background-color: burlywood;
+text-align: center;
+line-height: 56px;
+font-weight: bold;
+text-align: left;
+text-indent: 20px;
+border-radius: 0 0 20px 20px;}
+div.dame-et-longchamp{width: 302px;}
+fieldset.dame{width: 100%;}
+fieldset.dame img{width: 100%;border-radius: 20px 20px 0 0 ;}
+fieldset.dame figcaption{width: 100%;height: 56px;
+    background-color: burlywood;
+text-align: center;
+line-height: 56px;
+font-weight: bold;
+text-align: left;
+text-indent:20px;
+border-radius: 0 0 20px 20px;}
+fieldset.longchamp{width: 100%;margin-top: 40px;}
+fieldset.longchamp img{width: 100%;border-radius: 20px 20px 0 0 ;}
+fieldset.longchamp figcaption{width: 100%;height: 56px;
+    background-color: burlywood;
+text-align: center;
+line-height: 56px;
+font-weight: bold;
+text-align:left;
+text-indent: 20px;
+border-radius:0 0 20px 20px;}
+section.activite{margin:auto;
+    display:flex;
+    width: 1340px;
+    justify-content: space-between;
+    margin-top:110px;
+    
+}
