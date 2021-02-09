@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Mon Feb 08 2021 20:42:56 GMT+0100 (中欧标准时间)
+------------------------------------------------------
+
+Modified files:
+* projet2-weijiangyang/indext.html
+* projet2-weijiangyang/style.css
+* projet2-weijiangyang/test.html
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
