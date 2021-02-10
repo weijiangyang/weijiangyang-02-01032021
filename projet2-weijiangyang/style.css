@@ -6,7 +6,7 @@ clear:both;}
 a{text-decoration: none;color: black;}
 header a:visited{color:blue}
 body{font-family: 'raleway';}
-header{width: 1340px;height: 250px;margin:auto;position:relative}
+header{width: 1340px;height: 650px;margin:auto;position:relative}
 header p.logo img{height: 50px;position:absolute;top:50px;}
 header div.catelogue{position:absolute;top:25px;right: 10px;}
 header div.catelogue ul li{float:left;margin-left: 10px;font-size: 14px;font-weight: 600;
@@ -14,9 +14,41 @@ header div.catelogue ul li{float:left;margin-left: 10px;font-size: 14px;font-wei
 
 header div.catelogue ul li:nth-child(1){border-top:2px blue solid;}
 header h1{position:absolute;top:170px;
-    font-weight: 800;font-size:18px;}
+    font-weight: 800;font-size:20px;}
 header h2{position:absolute;top:200px;
-    font-weight: 200;font-size: 14px;}
+    font-weight: 200;font-size: 16px;}
+header ul.filtre{display:flex;position:absolute;top:500px}
+header ul.filtre li{height: 48px;
+    border:3px #F2F2F2 solid;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+    line-height: 48px;
+    margin-right: 35px;
+    font-weight: 600;
+padding-right:20px;
+border-radius: 48px;
+
+font-weight: 900;}
+header ul.filtre li:nth-child(1){border:transparent;}
+
+header ul.filtre li i{
+    width: 48px;
+height: 48px;
+border:1px transparent solid;text-align: center;line-height: 48px;
+margin-right: 15px;
+border-radius: 48px;
+background-color:#DEEBFF;
+color:#0065FC;
+font-size: 18px;
+}
+h2.information{position:absolute;top:580px}
+h2.information i{display:inline-block; width: 30px;height:30px;
+border:2px #f2f2f2 solid;
+box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+text-align: center;
+line-height: 30px;
+border-radius: 30px; 
+margin-right: 10px;
+color:#0065FC}
 section.hebergement{width: 1340px;margin:auto;display: flex;justify-content: space-between;}
 
 .left h1{position:absolute;top:45px;left:40px;font-size:18px;border-radius: 20px;margin:auto;}
