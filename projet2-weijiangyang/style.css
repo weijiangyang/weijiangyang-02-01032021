@@ -4,20 +4,22 @@
 display:table;
 clear:both;}
 a{text-decoration: none;color: black;}
-header a:visited{color:blue}
+/* header a:visited{color:blue} */
+header a.active-page{color:blue;}
 body{font-family: 'raleway';}
-header{width: 1340px;height: 650px;margin:auto;position:relative}
+header{width: 1340px;height: 440px;margin:auto;position:relative}
 header p.logo img{height: 50px;position:absolute;top:50px;}
 header div.catelogue{position:absolute;top:25px;right: 10px;}
 header div.catelogue ul li{float:left;margin-left: 10px;font-size: 14px;font-weight: 600;
     border:2px transparent solid;padding:35px;}
 
+
 header div.catelogue ul li:nth-child(1){border-top:2px blue solid;}
-header h1{position:absolute;top:170px;
+header h1{position:absolute;top:138px;
     font-weight: 800;font-size:20px;}
-header h2{position:absolute;top:200px;
+header h2{position:absolute;top:170px;
     font-weight: 200;font-size: 16px;}
-header ul.filtre{display:flex;position:absolute;top:500px}
+header ul.filtre{display:flex;position:absolute;top:287px}
 header ul.filtre li{height: 48px;
     border:3px #F2F2F2 solid;
     box-shadow: 0px 0px 1px rgba(0,0,0,0.2);
@@ -40,7 +42,7 @@ background-color:#DEEBFF;
 color:#0065FC;
 font-size: 18px;
 }
-h2.information{position:absolute;top:580px}
+h2.information{position:absolute;top:372px;}
 h2.information i{display:inline-block; width: 30px;height:30px;
 border:2px #f2f2f2 solid;
 box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
@@ -54,8 +56,7 @@ section.hebergement{width: 1340px;margin:auto;display: flex;justify-content: spa
 .left h1{position:absolute;top:45px;left:40px;font-size:18px;border-radius: 20px;margin:auto;}
 .hebergement h2.afficher{position:absolute;bottom:30px;left:40px;font-size: 13px;font-family:'raleway'}
 div.left{width:880px;height: 625px;background-color:#F2F2F2;border-radius: 20px;position:relative;}
-/* carre de herbergement*/
-/* section-left */
+
 div.auberge-cannebiere,
 div.hotel-port,
 div.hotel-mouette,
@@ -68,6 +69,7 @@ div.hotel-amina
     background-color: white;
     /* margin-right: 35px; */
     margin-bottom: 30px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 div.auberge-cannebiere img,
 div.hotel-port img,
@@ -75,7 +77,7 @@ div.hotel-mouette img,
 div.hotel-mer img,
 div.auberge-panier img,
 div.hotel-amina img
-{width: 235px;border-radius: 8px;
+{width: 235px;border-radius: 8px 8px 0 0;
     margin-bottom: 8px;}
 div.auberge-cannebiere h2,
 div.hotel-port h2,
@@ -103,7 +105,8 @@ div.right{width:420px;height: 625px;background-color:#F2F2F2;border-radius: 20px
 .au-coeur-eau,
 .hotel-blanc-bleu
 {width:350px;margin:auto;border:5px white solid;border-radius:12px;
-    background-color: white;position: relative;margin-bottom:33px;}
+    background-color: white;position: relative;margin-bottom:33px;
+box-shadow: 0 0 5px rgba(0,0,0,0.2);}
 .hotel-soleil{margin-top: 90px;}
 .hotel-soleil img,
 .au-coeur-eau img,
@@ -241,3 +244,30 @@ footer div.assistance{width:33.333%;
     padding-top: 40px;
 
 }
+form {position:absolute;
+    top: 210px;
+height:40px;
+border:2px #f2f2f2 solid;
+border-radius: 10px;
+box-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+form input{border:none;
+font-size: 17px;
+font-weight: 400;
+line-height: 37px;}
+form input[type=submit]{background-color:#0065FC;
+color:white;
+line-height: 40px;
+border-radius: 0 10px 10px 0;
+}
+form  i{margin-right: 10px;
+    height: 29px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    padding-top: 12px;
+    
+    font-size: 18px;
+
+background-color:#f2f2f2;
+border-radius: 10px 0 0 10px;}
