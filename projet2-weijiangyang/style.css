@@ -7,14 +7,15 @@ a{text-decoration: none;color: black;}
 header a:visited{color:blue}
 body{font-family: 'raleway';}
 header{width: 1340px;height: 250px;margin:auto;position:relative}
-header p.logo img{height: 50px;position:absolute;top:50px;left:30px;}
-header div.catelogue{position:absolute;top:55px;right: 50px;}
-header div.catelogue ul li{float:left;margin-left: 80px;font-size: 14px;}
-/* header h1{float:left;margin-top: 160px;margin-left: -100px;
-font-weight: 1800;} */
-header h1{position:absolute;left:30px;top:120px;
+header p.logo img{height: 50px;position:absolute;top:50px;}
+header div.catelogue{position:absolute;top:25px;right: 10px;}
+header div.catelogue ul li{float:left;margin-left: 10px;font-size: 14px;font-weight: 600;
+    border:2px transparent solid;padding:35px;}
+
+header div.catelogue ul li:nth-child(1){border-top:2px blue solid;}
+header h1{position:absolute;top:170px;
     font-weight: 800;font-size:18px;}
-header h2{position:absolute;left:30px;top:150px;
+header h2{position:absolute;top:200px;
     font-weight: 200;font-size: 14px;}
 section.hebergement{width: 1340px;margin:auto;display: flex;justify-content: space-between;}
 
@@ -180,4 +181,31 @@ section.activite{margin:auto;
     justify-content: space-between;
     margin-top:110px;
     
+}
+footer{width: 1440px;height: 175px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    
+    background-color:#F2F2F2;
+    margin-top:65px;
+
+}
+    
+footer div.propos{width:33.333%;
+    text-indent: 55px;
+    line-height: 30px;
+    padding-top:40px;
+
+}
+footer div.noshebergement{width:33.333%;
+    text-indent: 55px;
+    line-height: 30px;
+    padding-top: 40px;
+}
+footer div.assistance{width:33.333%;
+    text-indent: 55px;
+    line-height: 30px;
+    padding-top: 40px;
+
 }
