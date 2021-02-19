@@ -1,2 +1,2 @@
-# projet2-weijiangyang1
-DFJDSALJGAG
+# projet2-weijiangyang
+this is my first page web-site responsive. 
