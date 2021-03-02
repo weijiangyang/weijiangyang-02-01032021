@@ -12,12 +12,16 @@
 body{
     font-family:'raleway' ;
     margin:0 auto;
-       
+    
     }
 
 a{
     text-decoration: none;
+    color:black;
     }
+a.page-active{
+    color:blue;
+}
 /* *************************** */
 /* header */
 /* *************************** */
@@ -25,7 +29,7 @@ div.title{
     width: 90%;
     margin:0 auto;
     position:relative;
-    margin-top:2rem;
+    
     }
 
 
@@ -45,11 +49,9 @@ div.title img{
     width: 50%;
     padding-bottom:0.5rem;
     text-align: center;
-    font-size:0.9rem;
-    }
-.title ul li a{
-    color:royalblue
-}
+    font-size:0.9rem}
+
+
 
  nav ul li:last-child{
     text-align: right;
@@ -58,54 +60,51 @@ div.title img{
     right:1rem;
     line-height:2rem;
     font-family:'raleway-black';
-    }    
+}    
 
 
 
 nav ul li:first-child{
     border-bottom: 3px blue solid;
-    }
+}
 
 @media (min-width:1200px){
     
-    .title{
-        display:flex;
-        justify-content: space-between;
-        height:10rem;
-        align-items: flex-start;
-        margin-bottom: 0rem;
+.title{
+   display:flex;
+    justify-content: space-between;
+    height:10rem;    
+    align-items: flex-start;    
+    margin-bottom: 0rem;            
     }
-    
-    .title img{
-        object-fit: contain;
-        height: 100px;
-        position:relative;
-        top:2rem
+.title img{
+    object-fit: contain;
+    height: 100px;
+    position:relative;
+    top:2rem
     }
-    .title nav{
-        width:35%;
+.title nav{
+    width:35%;
     }
+.title nav ul li{    
+    width:33.3%;
+    font-size:0.92rem;
+    padding-top:3rem;
+    font-family: 'raleway-semibold';
         
-    
-    .title nav ul li{
-        width:33.3%;
-        font-size:1rem;
-        padding-top:3rem;
-    }    
-    
-    nav ul li:last-child{
-        position:static;
-        line-height: 1rem;
-        text-align: center;
     }
-    nav ul li:first-child{
+nav ul li:last-child{
+    position:static;
+    line-height: 1rem;
+    text-align: center;
+    }
+nav ul li:first-child{
       
-        border-top:2px blue solid;
-        border-bottom: none;
-    }    
-}        
+    border-top:2px blue solid;
+    border-bottom: none;
+    }
+}
     
-
 h1.top{
     margin:0 auto;
     width:90%;
@@ -117,66 +116,77 @@ h1.top{
     }
 
 p.villes{
-    font-family:raleway-light;
+    font-family:'raleway-semibold';
     font-size:1.0rem;
     width: 90%;
     margin:0 auto;
-    margin-top:0.9rem;
-    }
-
-form{
+    margin-top:0.5rem;
+}
+form{width:70% ;
     display:flex;
-    height: 3rem;
-    width: 90%;
+    max-width: 400px;
+    justify-content: space-between;
+    margin-top: 1.8rem;
     margin-left:5%;
-    justify-content: space-around;
+    border:2px #f3f3f3 solid;
     border-radius: 0.5rem;
-    background-color: #F2F2F2;
-    border:1px #f2f2f2 solid;
-    margin-top:2rem;
-    } 
-@media (min-width:1200px){
-    form{
-        max-width:400px;
-        margin-left:5%;
-        }
-    } 
-
+    
+    
+    
+    }
 form a{
-    display: inline-block;
-    height: 3rem;
-    width: 15%;
-    font-size:1.25rem;
-    text-align: center;
-    margin-top:1rem;
-    color:black;
+    display:inline-block;
+    width:auto;
+    padding:1rem;
+    background-color: #f3f3f3;
+    
+    
     }
-    
-form input[type='text'] {
-    
+form input{
+    width: auto;
+    padding-left:0.4rem;
+    padding-right:1rem;
+    font-size:1rem ;
     font-family: 'raleway-black';
-    width: 70%;
-    font-size: 1.125rem;
-    border:none;
-    font-size: 1.185rem;
-    text-indent: 1rem;
-    }
-
-
-#butt{
+    border:none
+}
+#butt1{
+    width:auto;
+    padding-left:1rem;
+    padding-right:1rem;
+    background-color:#0065FC;
     color:white;
-    background-color: blue;
-    font-size: 1.2rem;
-    margin-right:0;
-    width: 15%;
+    font-size: 1.1rem;
+    
     border:none;
-    border-radius:0 0.5rem 0.5rem 0;
-    }
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+#butt2{
+    width:auto;
+    padding-left:1rem;
+    padding-right:1rem;
+    font-size: 1.1rem;
+    font-family: 'raleway-semibold';
+    background-color:#0065FC;
+    color:white;
+    display:none;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border:none;
+}
+@media (min-width:1200px){
+    #butt2{display:inline-block;}
+    #butt1{position:absolute;
+        display:none;}}
+
+
+
+
+
+
 div.filtre{
     width: 90%;
-    
     margin:auto;
-    }
+}
 h2.filtre{
     margin-left:0;
     font-family:'raleway-black';
@@ -184,17 +194,17 @@ h2.filtre{
     margin:0 auto;
     margin-top:3rem;
     margin-bottom:1.3rem;
-    }    
-
+    
+}
 
 ul.type-hotel{
     margin:0 auto;
     width: 100%;
     display:flex;
+    
     flex-wrap: wrap;
     font-size:1.025rem;
-    font-weight: bold;
-    }
+    font-weight: bold;}
 
 ul.type-hotel li{
     border:2px #F2F2F2 solid;
@@ -205,15 +215,16 @@ ul.type-hotel li{
     margin-bottom: 1rem;
     margin-right:0.5rem;
     border-radius: 1.5rem;
-    }
+        }
 
 @media (min-width:1200px){
     div.filtre{
         width: 90%;
         margin-left:5%;
+       
         display:flex;
         margin-top:2.5rem
-        }
+    }
     h2.filtre{
         margin-top:1rem;
         margin-left:0;
@@ -222,18 +233,17 @@ ul.type-hotel li{
 
     ul.type-hotel {
         flex:none;
+
     }
-    
     
     ul.type-hotel li{
         margin-right:1.2rem;
-        }
- }   
-    
- ul.type-hotel li a{
+    }
+}
+ul.type-hotel li a{
     color:black;
     font-family: 'raleway-black';
-    }
+}
 
 ul.type-hotel li i{
     margin-right:0.4rem;
@@ -245,17 +255,18 @@ ul.type-hotel li i{
     border-radius: 1.5rem;
     background-color:#DEEBFF ;
     color:#0065FC      
-    }
+}
 div.information{
     width: 90%;
     margin:2rem auto;
     font-size: 1rem;
     position: relative;
-    }
+}
 div.information p{
     margin-left: 3rem;
     line-height: 1.275rem;
-    }
+    font-family: 'raleway-semibold';
+}
 div.information i{
     position: absolute;
     top:-0.6rem;
@@ -280,7 +291,8 @@ div.plus-populaire{
     box-shadow: 0 0 3px rgba(0, 0,0,0.2);
     padding-bottom:1.2rem;
     margin-bottom: 3rem;
-    }
+    
+}
 
 div.titre-hotel{
     width: 90%;
@@ -290,55 +302,75 @@ div.titre-hotel{
     padding:2.5rem 0;
     font-size: 1.3rem;
     font-family: 'raleway-black';
-    }   
+ }   
         
 div.hotel-populaire{
     width: 85%;
-   aspect-ratio: 66/27;
+   /* aspect-ratio: 66/27; */
+   
     display: flex;
     margin:auto;
     overflow: hidden;
     justify-content: space-between;
     margin-bottom:1.5rem;
+    box-shadow: 0 0 3px rgba(0, 0,0,0.3);
     border-radius:10px;
     border: 4px white solid;
     background-color: white;
-    box-shadow: 0 0 5px rgba(0, 0,0,0.3);
-    }
+}
 
 div.hotel-populaire img{
-    width:39%;
+    /* display: block; */
+    width:100%;
+    height: 100%;
     object-fit: cover;
-    overflow: hidden;
+    position:absolute;
+    left:0;
+    top:0;
+    
     border-radius: 4px 0 0 4px;
-    }   
+ }   
+ div.hotel-populaire a.image{
+     display:block;
+     width: 40%;
+     position:relative;
+     padding:42.8% 0 0;
+ }
+ div.hotel-populaire a.desc{
+     width: 60%;
+     display: block;
+ }
     
 div.desc{
-    width: 55%;
+    width: 100%;
     height: 100%;
     position:relative;
-    padding-top:0.8rem;
-    font-size:0.9rem;
+    padding-top:0.6rem;
+    font-size:0.875rem;
     border-radius:0 1rem 1rem 0;
     background-color:white;
-    }  
+    margin-left:1.0rem;
+    margin-right: 0.5rem;
+    
+}  
 
 div.desc h2{
     font-family:'raleway-black';
-    margin-bottom:0.6rem;
+    margin-bottom:0.3rem;
     font-size:1rem;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
+    color:black;
     }
 
 div.desc p.star{
     position:absolute;
-    bottom:1.4rem;
-    }   
+    bottom:1.0rem;
+}   
 
 div.desc p i{
     color:#0065FC;
-    }   
-
+    
+}
 
 div.image{
     width: 100%;
@@ -346,7 +378,7 @@ div.image{
     margin:0 auto;
     overflow: hidden;
     border-radius: 1.2rem 1.2rem 0 0;
-    }
+}
 
 div.image img{
     width:100%;
@@ -354,7 +386,7 @@ div.image img{
     display:block;
     position:relative;
     top:-65px;
-    }
+}
 
 /* ******************************* */
 /* la section de 'hebergement a marseille */
@@ -362,124 +394,145 @@ div.image img{
 .hebergement-marseille p.title{
     
     margin:0 auto;
-    width: 90%;
+   width: 90%;
     padding: 2.5rem 0;
     font-family: 'raleway-black';
     font-size:1.3rem;
-    }
+}
 
 .hebergement-marseille h2,
-.hebergement-marseille p{
+.hebergement-marseille p
+{
     width: 95%;
     margin:0 auto;
     
     margin-bottom: 0.7rem;
     font-size: 0.875rem;
-    }
+}
 
 .hebergement-marseille h2{
     font-size: 1rem;
     font-family: 'raleway-black';
     margin-top: 0.625rem;
-    }   
+}   
 
 .hebergement-marseille p i{
     color:#0065FC;
     font-size: 0.9rem;
-    }
+}
 
 div.auberge{
     width: 85%;
+    
     margin:0 auto;
     border:4px white solid;
+    
     border:4px white solid;
     border-radius:1.2rem;
     box-shadow: 0 0 5px rgba(0, 0,0,0.3);
     margin-bottom: 2rem;
-    }    
-   
-div.auberge div.image{
-    aspect-ratio: 426/150;
-   } 
+    color:black;
+    
+}   
+div.auberge a{display:block;width: 100%;}
+div.auberge div.image {
+    /* aspect-ratio: 426/150; */
+    width: 100%;
+    height:0;
+    padding:35.21% 0 0;
+    
+    
+    position:relative;
+    overflow: hidden;
+    
+}
 
 div.image img{
     width: 100%;
-    object-fit: cover;}
-div.image img.port{
-    position: relative;
-    top:-100px;
-    }
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top:0;
+    left: 0;
+}
+
 .hebergement-marseille p.afficher{
     width: 76.5%;
     margin:0 auto;
     font-family: 'raleway-semibold';
     font-size: 1.2rem;
     margin-top:2rem;
-    }
+}
 
 div.hebergement-marseille{
     width: 90%;
     margin-bottom: 3rem;
     margin:auto;
-    }
+}
  @media (min-width:1200px){
      .container-main{
          width: 90%;
          margin:auto;
+         
          display:flex;
          justify-content: space-between;
-        } 
+         
+     }
      
      div.hebergement-marseille{
          width: 65%;
          background-color: #f2f2f2;
          margin:0;
          border-radius: 1rem;
-      }
+         
+     }
      div.section-auberge{
          width: 100%;
          display:flex;
          flex-wrap: wrap;
-      }   
+         
 
-    div.auberge{
+     }
+     div.auberge{
          width:27%;
-     } 
-      
+         
+     }
      .hebergement-marseille p.title{
          line-height: 5rem;
          padding:0;
          margin-left:2.5%;
-        height:5rem;
-      }   
-     
+         
+         height:5rem;
+         
+     }
      div.auberge div.image{
-         aspect-ratio: 283/137;
-        }
-     div.auberge div.image{
+         /* aspect-ratio: 283/137; */
+         padding:49.41% 0 0;
+     }
+     div.auberge div.image img{
          object-fit: cover;
-        }
+     }
      div.plus-populaire{
          width: 32%;
          order:2;
          margin:0;
          border-radius: 1rem;
-        }
+     }
      div.hotel-populaire{
          margin-bottom: 2rem;
-        }
+     }
      div.titre-hotel {
          padding:0;
          height:5rem;        
-        }
+     }
      div.titre-hotel p,
      div.titre-hotel i{
          line-height: 5rem;
-        }
+     }
      div.hebergement-marseille p.afficher{
          width: 90%;
          font-family: 'raleway-black';
-        }
+     }
 
      }
 
@@ -490,24 +543,42 @@ div.hebergement-marseille{
 .container-activite{
     width: 85%;
     margin: 0 auto;
-    }
+}
+div.activite-vieux-port a{display:block;width: 100%;}
 .image-vieux-port,
-.image-calanque{
-
+.image-calanque,
+.image-pomegue,
+.image-frioul,
+.image-garde,
+.image-longchamps
+{
     width: 100%;
-    aspect-ratio: 432/177;
+    /* aspect-ratio: 432/177; */
+    height:0;
+    padding:41% 0 0;
+    position: relative;
     overflow: hidden;
 }
 .image-vieux-port img,
-.image-calanque img{
-
+.image-calanque img,
+.image-pomegue img,
+.image-frioul img,
+.image-garde img,
+.image-longchamps img
+{
     object-fit: cover;
     width: 100%;
+    height:100%;
     border-radius: 1.5rem 1.5rem 0 0 ;
+    position:absolute;
+    top:0;
+    left:0;
 }
-div.activite-vieux-port p,
-div.activite-calanque p{
 
+
+div.activite-vieux-port p,
+div.activite-calanque p
+{
 width: 100%;
 margin:0 auto;
 /* background-color: cyan; */
@@ -520,54 +591,26 @@ div.activite-calanque,
 div.activite-pomegue,
 div.activite-frioul,
 div.activite-garde,
-div.activite-longchamps{
-
+div.activite-longchamps
+{
     box-shadow: 0 0 5px rgba(0, 0,0,0.3);
     border-radius: 1.5rem;
     margin-bottom: 2rem;
 }
 
-.image-pomegue,
-.image-frioul,
-.image-garde,
-.image-longchamps{
 
-    width:100%;
-    aspect-ratio: 432/177;
-    overflow: hidden;
-}
-.image-pomegue{
-    aspect-ratio:384/231;
-}
-.image-frioul{
-    aspect-ratio:383/139;
-}
-.image-garde{
-    aspect-ratio:382/177;
-}
-.image-longchamps{
-    aspect-ratio: 384/197;
-}
-.image-pomegue img,
-.image-frioul img,
-.image-garde img,
-.image-longchamps img{
-
-    object-fit: cover;
-    width: 100%;
-    border-radius: 1.5rem 1.5rem 0 0 ;
-}
 div.activite-pomegue p,
 div.activite-frioul p,
 div.activite-garde p, 
 div.activite-longchamps p,
 div.activite-vieux-port p,
-div.activite-calanque p{
-
+div.activite-calanque p
+{
     width: 100%;
     margin:0 auto;
-    font-size: 1.0rem;
+    font-size: 0.875rem;
     line-height: 3rem;
+    height:3rem;
     text-indent: 1rem;
     border-radius:0 0 1.5rem 1.5rem;
     font-family: 'raleway-black';
@@ -595,22 +638,25 @@ div.section-activite{
     margin:2rem auto;
     font-family: 'raleway-black';
     font-size: 1.3rem;
-    }
-     
+      
+   }
+   
     div.container-activite{
         width: 100%;
-        /* background-color: aqua; */
+        
         display:flex;
         justify-content: space-between;
-        }
+       
+    }
     
     div.activite-pomegue-frioul,
     div.activite-vieux-port,
     div.activite-calanque,
-    div.activite-garde-longchamps{
+    div.activite-garde-longchamps
+    
+    {
         width: 23%;
     }
-    
     div.activite-pomegue,
     div.activite-frioul,
     div.activite-garde,
@@ -618,22 +664,58 @@ div.section-activite{
         width: 100%;
     }
     div.activite-pomegue-frioul,
-    div.activite-garde-longchamps{
+    div.activite-garde-longchamps
+    {
         display:flex;
         flex-direction: column;
         justify-content: space-between;
     }
     div.image-vieux-port,
-    div.image-calanque{
+    div.image-calanque
+    {
         width:100%;
-        aspect-ratio: 288/370;
+        padding:128.5% 0 0;
         }
-    div.image-vieux-port img,
-    div.image-calanque img{
+    div.image-pomegue{
         width: 100%;
-        height: 100%;
-        }
-  }
+        padding:59.55% 0 0;
+        position:relative;
+    }
+    div.image-pomegue img{
+        position:absolute;
+        left:0;
+        top:0;
+        object-fit: cover;
+        width: 100%;height: 100%;
+    }
+    div.image-frioul{
+        width: 100%;
+        padding:36.36% 0 0;
+        position:relative;
+    }
+    div.image-frioul img{
+        position:absolute;
+        left:0;
+        top:0;
+        object-fit: cover;
+        width: 100%;height: 100%;
+    }
+    
+    div.image-longchamps{
+        width: 100%;
+        padding:50.65% 0 0;
+        position:relative;
+    }
+    div.image-longchamps img{
+        position:absolute;
+        left:0;
+        top:0;
+        object-fit: cover;
+        width: 100%;height: 100%;
+    }
+        
+    
+}
     
    
 /************************* */
@@ -644,40 +726,43 @@ div.footer{
     background-color:#F2F2F2 ;
     margin:1.8rem auto;
     padding-bottom:1rem;
-    }
+}
 
 div.foot-desc h3,
 div.foot-desc p {              
     margin-left: 2rem;
-    }
+    font-size: 0.875rem;
+}
 
 div.foot-desc h3{
     padding-top:3rem;
     padding-bottom:1rem;
     font-family: 'raleway-black';
-    }
+    font-size: 1rem;
+   
+}
 
 @media (min-width:1200px){
     div.footer{
         display:flex;
         justify-content: flex-start;
         padding:3rem 0;
-        }
+    }
     div.foot-desc{
         width: 33.33%;
     }
     div.foot-desc h3{
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding:0;
         margin-bottom: 1rem;
     }  
     div.foot-desc p{
-        font-size:1rem;
+        font-size:0.875rem;
         font-family:'raleway-light';
         line-height: 1.8rem;
     }
-} 
-
+    
+}
 
     
     
